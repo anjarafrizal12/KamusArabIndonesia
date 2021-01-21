@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarMail"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_below="@id/appbarMail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_above="@id/buttonSend">
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/sendTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="send to"
+            android:textColorHint="@color/colorAccent"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/subject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject Email"
+            android:textColorHint="@color/colorAccent"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Body Email"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:textColorHint="@color/colorAccent"
+            android:background="@android:drawable/editbox_background_normal"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send Mail"
+        android:layout_alignParentBottom="true"
+        android:background="@android:drawable/btn_default"/>
+
+</RelativeLayout>

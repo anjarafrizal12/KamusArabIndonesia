@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".fragment.ContactFragment">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbarFavorite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:padding="50dp"
+            android:src="@drawable/logoalmaaj2"
+            app:layout_collapseMode="parallax" />
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbarContact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:minHeight="?attr/actionBarSize" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:text="للتواصل معنا."
+                    android:textAlignment="center"
+                    android:textColor="@color/primaryText"
+                    android:textSize="35dp"
+                    android:textStyle="bold" />
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:elevation="2dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="8dp"
+                    android:lineSpacingExtra="10dp"
+                    android:text="معجم المعاني  باللغة العربية والإندونيسية, نسخة مختصرة من نتائج صفحة المعجم العربي، موقع معجم المعاني يمكنك التواصل معنا عبر البريد الإلكتروني, انقر على أيقونة البريد الإلكتروني أدناه يمكن زيارة موقع المعجم على الشبكة العنكبوتية, انقر على أيقونة أدناه يمكن تنزيل مزيد من التطبيقات, انقر على أيقونة متجر غوغل او متجر أبل أدناه يمكن مشاركة التطبيق عبر منافذ التواصل الإجتماعي , انقر على أيقونة المشاركة أدناه"
+                    android:textColor="@color/primaryText"
+                    android:textSize="30dp" />
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

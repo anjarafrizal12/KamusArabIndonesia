@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">معجم التوفيق</string>
+    <string name="logo_content">splashscreen logo</string>
+    <string name="content_title"> المعجم التوفيق</string>
+    <string name="app_version"> 1.0 ميل الرحم</string>
+    <string name="logo_almaaj">aplication logo</string>
+
+
+    // bottom navigation string description
+
+    <string name="contactImage">Contact Image Navigation</string>
+    <string name="policyImage">Policy Image</string>
+    <string name="mainBookImage">Main Book Navigation</string>
+    <string name="favoriteImage">Favorite Navigation</string>
+    <string name="HistoryImage">History Navigation</string>
+
+    // list item example string
+    <string name="tv_id_exam">1</string>
+    <string name="tv_title_exam">Air</string>
+    <string name="tv_content_exam">المعجم</string>
+    <string name="favorite_for_bookmar">favorite for bookmar</string>
+    <string name="copy_and_paste">Copy content</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

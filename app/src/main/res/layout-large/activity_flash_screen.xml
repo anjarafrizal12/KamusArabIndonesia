@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    tools:context=".FlashScreen">
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/iconalmaaj2"
+        android:contentDescription="@string/logo_content"/>
+
+    <TextView
+        android:id="@+id/tvKamus"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/content_title"
+        android:textColor="@android:color/darker_gray"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/splashLogo"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tvDevelop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_version"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="15dp"
+        android:textSize="12sp"/>
+
+</RelativeLayout>
